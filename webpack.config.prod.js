@@ -11,8 +11,15 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
-    // filename: '[name].[hash].js',   // 分離每一個npm包需要這個，有加上西哈值
+    // filename: 'bundle.js'
+    filename: '[name].[contenthash].js',   // 分離每一個npm包需要這個，有加上西哈值
+  },
+
+  // 分出遊戲與vendor包
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
   },
 
   // 分離每一個npm包
