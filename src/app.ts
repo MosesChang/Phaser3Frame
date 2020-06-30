@@ -1,4 +1,4 @@
-import "phaser";
+import "./Importer";
 import { WelcomeScene } from "./welcomeScene";
 import { GameScene } from "./gameScene";
 import { ScoreScene } from "./scoreScene";

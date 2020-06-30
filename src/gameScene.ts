@@ -1,5 +1,3 @@
-import "phaser";
-
 export class GameScene extends Phaser.Scene {
   delta: number;
   lastStarTime: number;

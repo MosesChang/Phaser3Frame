@@ -1,5 +1,3 @@
-import "phaser";
-
 export class WelcomeScene extends Phaser.Scene {
   title: Phaser.GameObjects.Text;
   hint: Phaser.GameObjects.Text;
